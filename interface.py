@@ -21,11 +21,11 @@ def swap_face(model: np.ndarray, face: np.ndarray) -> np.ndarray:
   return enhancer.process_frame(None, None, inswapped)
 
 if __name__ == '__main__':
-  model = cv2.imread('./model/.github/examples/model.png')
-  face  = cv2.imread('./model/.github/examples/face.jpeg')
+  model = cv2.imread('./.github/examples/samurai.png')
+  face  = cv2.imread('./.github/examples/Reynold_Oramas.jpg')
   roop.globals.source_path=model 
   roop.globals.target_path=face
-  roop.globals.output_path='./model/.github/examples/output.png'
+  roop.globals.output_path='./.github/examples/output.png'
   inswapped = swap_face(model, face)
-  cv2.imwrite('./model/.github/examples/output.png', inswapped)
+  cv2.imwrite('./.github/examples/output.png', inswapped)
   print('AAAAAAAAA')
