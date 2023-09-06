@@ -1,6 +1,6 @@
 from typing import Optional
 
-from roop.typing import Face
+from model.roop.typing import Face
 
 FACE_REFERENCE = None
 
