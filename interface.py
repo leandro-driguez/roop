@@ -10,7 +10,7 @@ import roop.processors.frame.face_enhancer as enhancer
 swapper.pre_check()
 enhancer.pre_check()
 
-roop.globals.execution_providers = decode_execution_providers(['gpu'])
+roop.globals.execution_providers = decode_execution_providers(['cuda'])
 roop.globals.many_faces = True
 
 def swap_face(model: np.ndarray, face: np.ndarray) -> np.ndarray:
